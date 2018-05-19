@@ -1,0 +1,2 @@
+# waxom
+Template for course
