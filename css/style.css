@@ -1,0 +1,50 @@
+body {
+    background: #000;
+    font-size: 14px;
+}
+
+.header {
+    padding: 1.5em 0;
+    display: flex;
+}
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 300;
+    max-width: 20%;
+}
+
+.logo::before {
+    content: url('../img/logo.png');
+}
+
+.menu {
+    max-width: 70%;
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+}
+
+.main_menu {
+    list-style-type: none;
+    color: #fff;
+    margin: 0;
+}
+
+.menu_item {
+    display: inline-block;
+    margin: 0.3em;
+    padding: 0.5em;
+}
+
+.menu_item > a {
+    color: #fff;
+}
+
+.search {
+    max-width: 8%;
+}
