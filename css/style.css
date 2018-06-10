@@ -1,6 +1,11 @@
 body {
     background: #000;
     font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+}
+
+button {
+    cursor: pointer;
 }
 
 .top_container {
@@ -115,4 +120,53 @@ body {
 
 .icon-marketing::before {
     content: url('../img/services/design.png');
+}
+
+.carousel-caption {
+    top: 245px;
+    max-width: 40%;
+    margin: auto;
+}
+
+.slider-subtitle {
+    font-size: 2.25em;
+}
+
+.slider-title {
+    font-size: 3.25em;
+    font-weight: 700;
+}
+
+.slider-text {
+    font-weight: 300;
+}
+
+.w-100 {
+    filter: brightness(40%);
+}
+
+.slider-button {
+    border-radius: 3px;
+    background: #998675;
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    margin-top: 3.125em;
+    padding: 1em 2em;
+    text-transform: uppercase;
+    border-bottom: 2px solid #736357;
+}
+
+.carousel-indicators li {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    margin-right: 5px;
+    margin-left: 5px;
+    background: #8f9091;
+}
+
+.carousel-indicators .active {
+    border: 1px solid #c4b3a1;
+    background: transparent;
 }
