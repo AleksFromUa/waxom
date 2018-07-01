@@ -1,12 +1,16 @@
+/* General */
+
 body {
     background: #000;
-    font-size: 14px;
+    font-size: 16px;
     font-family: 'Raleway', sans-serif;
 }
 
 button {
     cursor: pointer;
 }
+
+/* Header */
 
 .top_container {
     background: #000;
@@ -25,6 +29,8 @@ button {
     display: flex;
     justify-content: space-between;
     width: 1200px;
+    z-index: 2;
+    position: absolute;
 }
 
 .logo {
@@ -88,43 +94,12 @@ button {
     content: url('../img/search.png');
 }
 
+/* Slider */
 
-.services {
-    display: flex;
-    justify-content: space-around;
-    margin: 78px 0;
-    background: #fff;
-}
-
-.service-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.service-icon {
-
-}
-
-.icon-design::before {
-    content: url('../img/services/design.png');
-}
-
-.icon-development::before {
-    content: url('../img/services/design.png');
-}
-
-.icon-customization::before {
-    content: url('../img/services/design.png');
-}
-
-.icon-marketing::before {
-    content: url('../img/services/design.png');
-}
 
 .carousel-caption {
     top: 245px;
-    max-width: 40%;
+    max-width: 50%;
     margin: auto;
 }
 
@@ -169,4 +144,72 @@ button {
 .carousel-indicators .active {
     border: 1px solid #c4b3a1;
     background: transparent;
+}
+
+.carousel-item {
+    max-height: 960px;
+}
+
+/* Services */
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    padding: 78px 0;
+    background: #fff;
+}
+
+.service-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1em;
+}
+
+.service-item:hover .service-title {
+    color: #c7b299;
+}
+.service-item:hover .service-line {
+    background: #c7b299;
+}
+
+.service-icon {
+    width: 40px;
+}
+
+.icon-design::before {
+    content: url('../img/services/design.svg');
+}
+
+.icon-development::before {
+    content: url('../img/services/development.svg');
+}
+
+.icon-customization::before {
+    content: url('../img/services/customization.svg');
+}
+
+.icon-marketing::before {
+    content: url('../img/services/marketing.svg');
+}
+
+.service-title {
+    font-size: 1.375em;
+    font-weight: 500; 
+    padding: 0.25em 0;
+    color: #555555;
+}
+
+.service-description {
+    color: #8c8c8c;
+    font-size: 0.875em;
+    text-align: center;
+    font-weight: 300;
+}
+
+.service-line {
+    height: 3px;
+    width: 70px;
+    background: #f1eee9;
+    margin-top: 1.5em;
 }
